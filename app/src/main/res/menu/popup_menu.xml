@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Lihat Data" android:id="@+id/mnview"></item>
+    <item android:title="Edit Data" android:id="@+id/mnedit"></item>
+</menu>

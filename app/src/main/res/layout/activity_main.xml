@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#06C4FF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/LogoApp"
+        android:layout_width="155dp"
+        android:layout_height="165dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/list" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="serif-monospace"
+        android:text="Welcome in ToDo App"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        app:expandedHintEnabled="false"
+        app:helperText="*Required"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#FF4C4C"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="clip_vertical"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#BBDEFB"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="5dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PassLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|clip_vertical"
+        android:clipToPadding="false"
+        android:dividerPadding="@dimen/default_gap"
+        app:errorEnabled="true"
+        app:helperText="*Required"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#FF4C4C"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="clip_vertical"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#BBDEFB"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#80DEEA"
+            android:text="Login" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#81D4FA"
+            android:text="Register" />
+    </LinearLayout>
+
+</LinearLayout>
