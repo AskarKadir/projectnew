@@ -10,17 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Advance">
         <activity
-            android:parentActivityName=".HomeActivity"
-            android:name=".LihatData"
+            android:name=".TemanBaru"
             android:exported="false" />
+        <activity
+            android:name=".RecyclerAct"
+            android:parentActivityName=".HalamanAwal"
+            android:exported="false" />
+        <activity
+            android:name=".LihatData"
+            android:exported="false"
+            android:label="Detail Kontak"
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".HomeActivity"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ActList"
             android:exported="false"
-            android:label="ListView" />
+            android:label="List View"
+            android:parentActivityName=".HalamanAwal" />
+        <activity
+            android:name=".HalamanAwal"
+            android:exported="false"
+            android:label="Daftar Halaman"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

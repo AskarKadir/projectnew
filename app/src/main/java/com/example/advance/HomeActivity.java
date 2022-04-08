@@ -15,9 +15,9 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     private ListView list;
-
+    /*membuat adapter*/
     private ListViewAdapter adapter;
-
+    /*membuat array dengan nama array ListNama*/
     String[] listNama;
 
     public static ArrayList<ClassNama>classNamaArrayList = new ArrayList<ClassNama>();
@@ -31,7 +31,8 @@ public class HomeActivity extends AppCompatActivity implements PopupMenu.OnMenuI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        listNama = new String[]{"Askar","Rahmat","Imam","Abdul Kadir","Asma","Intan","Rheana","Rumisha"};
+        listNama = new String[]{"Askar","Rahmat","Imam","Abdul Kadir","Asma","Intan","Rheana",
+                "Rumisha"};
 
         list = findViewById(R.id.ListKontak);
 

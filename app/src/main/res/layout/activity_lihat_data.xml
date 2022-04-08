@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/Utama"
     tools:context=".LihatData">
 
     <TextView
@@ -12,6 +14,7 @@
         android:layout_height="46dp"
         android:text="Detail Kontak"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="14pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +30,7 @@
         android:layout_marginTop="10dp"
         android:text="Nama"
         android:textAlignment="textStart"
+        android:textColor="@color/white"
         android:textSize="11pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +46,7 @@
         android:layout_marginTop="35dp"
         android:text="Notel"
         android:textAlignment="textStart"
+        android:textColor="@color/white"
         android:textSize="11pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView4"

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#06C4FF"
+    android:background="@android:color/white"
+    android:backgroundTint="@color/Utama"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -23,8 +23,10 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:fontFamily="serif-monospace"
+        android:gravity="center"
         android:text="Welcome in ToDo App"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -49,8 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="clip_vertical"
-            android:background="@drawable/round_button"
-            android:backgroundTint="#BBDEFB"
+            android:background="@drawable/emailnpasslayout"
             android:drawableStart="@drawable/user"
             android:drawablePadding="5dp"
             android:hint="Email"
@@ -81,8 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="clip_vertical"
-            android:background="@drawable/round_button"
-            android:backgroundTint="#BBDEFB"
+            android:background="@drawable/emailnpasslayout"
             android:drawableStart="@drawable/lock"
             android:drawablePadding="5dp"
             android:hint="Password"
@@ -105,9 +105,9 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/round_button"
-            android:backgroundTint="#80DEEA"
-            android:text="Login" />
+            android:background="@drawable/loginbutton"
+            android:text="Login"
+            android:textColor="@color/white" />
 
         <Space
             android:layout_width="10dp"
@@ -120,9 +120,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/round_button"
-            android:backgroundTint="#81D4FA"
-            android:text="Register" />
+            android:background="@drawable/registerbutton"
+            android:text="Register"
+            android:textColor="@android:color/holo_red_light" />
     </LinearLayout>
 
 </LinearLayout>

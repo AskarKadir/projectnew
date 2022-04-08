@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+
+/*Adapter digunakan sebagai jembatan penghubung antara data array dan tampilan array*/
 public class ListViewAdapter extends BaseAdapter {
     /*Manually Adding Code*/
     Context mContext;
@@ -51,7 +53,8 @@ public class ListViewAdapter extends BaseAdapter {
 
         if(view == null){
             holder = new ViewHolder();
-            view = inflater.inflate(R.layout.item_listview,null);
+            /*Untuk menampilakan layout listview ketika*/
+            view = inflater.inflate(R.layout.item_listview, null);
             holder.name = (TextView) view.findViewById(R.id.tempatnama);
 
             view.setTag(holder);
