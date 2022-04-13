@@ -24,7 +24,7 @@ public class TemanBaru extends AppCompatActivity {
     private TextInputLayout TInama,TInomor;
     private Button Bsimpan;
     String nm,tlp;
-    DBController controller = new DBController(this);
+    DBController controller = new DBController(TemanBaru.this);
     Timer timer;
 
     @Override
@@ -49,14 +49,18 @@ public class TemanBaru extends AppCompatActivity {
                     qvalues.put("telpon",tlp);
 
                     controller.insertData(qvalues);
+                    callHome();
 
-                    Toast.makeText(TemanBaru.this, "Data telah disimpan "+nm+" "+tlp, Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(TemanBaru.this,RecyclerAct.class);
-                    startActivity(i);
-                    finish();
+                    Toast.makeText(TemanBaru.this, "Data telah disimpan", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    public void callHome(){
+        Intent i = new Intent(TemanBaru.this,RecyclerAct.class);
+        startActivity(i);
+        finish();
     }
 
 

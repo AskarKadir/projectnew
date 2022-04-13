@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Advance">
         <activity
+            android:name=".edit_teman"
+            android:exported="false" />
+        <activity
             android:name=".TemanBaru"
             android:exported="false" />
         <activity
             android:name=".RecyclerAct"
-            android:parentActivityName=".HalamanAwal"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".HalamanAwal" />
         <activity
             android:name=".LihatData"
             android:exported="false"

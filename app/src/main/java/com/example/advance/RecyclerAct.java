@@ -21,7 +21,7 @@ public class RecyclerAct extends AppCompatActivity {
     private RecyclerView recyclerView;
     private TemanAdapter adapter;
     private ArrayList<Teman> temanArrayList;
-    DBController controller = new DBController(this);
+    DBController controller = new DBController(RecyclerAct.this);
     String id,nm,tlp;
     private FloatingActionButton fab;
 
@@ -29,11 +29,11 @@ public class RecyclerAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
-
+        BacaData();
         recyclerView = findViewById(R.id.recyclerviewact);
         fab = findViewById(R.id.addfloatbutton);
 
-        BacaData();
+//        BacaData();
 
         adapter = new TemanAdapter(temanArrayList);
 
@@ -59,9 +59,9 @@ public class RecyclerAct extends AppCompatActivity {
         for(int i = 0;i<daftarTeman.size();i++){
             Teman teman = new Teman();
 
-            teman.setId(daftarTeman.get(i).get("id").toString());
-            teman.setNama(daftarTeman.get(i).get("nama").toString());
-            teman.setTelpon(daftarTeman.get(i).get("telpon").toString());
+            teman.setId(daftarTeman.get(i).get("id"));
+            teman.setNama(daftarTeman.get(i).get("nama"));
+            teman.setTelpon(daftarTeman.get(i).get("telpon"));
             /*pindahkan dari Teman kedalam Arraylist teman di adapter*/
             temanArrayList.add(teman);
         }
